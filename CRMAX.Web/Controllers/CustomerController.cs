@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRMAX.BO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,23 @@ namespace CRMAX.Web.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+
+        public JsonResult GetCustomer()
+        {
+
+            var customer = new Customer();
+            customer.direccion = "Decima Sexta 213";
+            customer.telefono = "83323452";
+            customer.correo = "luis_araizag@hotmail.com";
+            customer.nombre = "Juan Alberto Araiza Galaviz";
+
+
+            return Json(customer, JsonRequestBehavior.AllowGet);
+
+
+
         }
     }
 }
