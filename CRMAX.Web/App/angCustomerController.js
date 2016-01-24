@@ -1,10 +1,10 @@
 ﻿
-(function () {
-
-    angular.module("CRMApp").controller("angCustomerController", angCustomerController);
-
-    function angCustomerController()
-    { }
+app.controller("angCustomerController", function ($scope) {
 
 
-})();
+
+    $scope.test = "Hola";
+
+
+
+});

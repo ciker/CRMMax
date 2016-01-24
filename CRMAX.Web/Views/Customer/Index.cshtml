@@ -1,10 +1,43 @@
 ﻿
+@section scripts{
 
+<script src="~/App/App.js"></script>
+<script src="~/App/angCustomerController.js"></script>
+
+
+}
 
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div ng-app="CRMApp">
+
+    <div ng-controller="angCustomerController">
+
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" id="txtNombre" ng-model="nombre" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Direccion</label>
+            <input type="text" id="textDireccion" ng-model="direccion" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Telefono</label>
+            <input type="text" id="txtTelefono" ng-model="telefono" class="form-control" />
+        </div>
+      
+
+        <div class="form-group">
+            <label>Correo</label>
+            <input type="text" id="txtCorreo" ng-model="correo" class="form-control" />
+        </div>
+
+    </div>
+
+</div>
 
