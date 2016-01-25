@@ -4,6 +4,7 @@ app.controller("angCustomerController", function ($scope, CustomerService) {
 
 
     getCustomer();
+    $scope.customer = {};
 
     function getCustomer() {
 
